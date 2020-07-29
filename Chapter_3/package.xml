@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Chapter 3</fullName>
+    <types>
+        <members>Account.Search__c</members>
+        <members>Advertisement__c.Customer__c</members>
+        <members>Advertisement__c.Deal__c</members>
+        <members>Advertisement__c.Expected_Dismission_Date__c</members>
+        <members>Advertisement__c.Installation_Address__c</members>
+        <members>Advertisement__c.Installation_Date__c</members>
+        <members>Advertisement__c.Is_Active__c</members>
+        <members>Advertisement__c.Monhts_of_availability__c</members>
+        <members>Advertisement__c.Price__c</members>
+        <members>Advertisement__c.Renewal_Status__c</members>
+        <members>Contact.Domain__c</members>
+        <members>Contact.Padding__c</members>
+        <members>Contact.Social__c</members>
+        <members>Contact.Twitter_Handle__c</members>
+        <members>Example__c.Automatic_Number__c</members>
+        <members>Example__c.Currency__c</members>
+        <members>Example__c.Customer__c</members>
+        <members>Example__c.DateTimeValue__c</members>
+        <members>Example__c.Date_Formula__c</members>
+        <members>Example__c.Date_Time_Formula_with_Text__c</members>
+        <members>Example__c.Date_Time__c</members>
+        <members>Example__c.Date__c</members>
+        <members>Example__c.Email__c</members>
+        <members>Example__c.Encrypted__c</members>
+        <members>Example__c.Formula_Example__c</members>
+        <members>Example__c.MultiPicklist__c</members>
+        <members>Example__c.Number_Formula__c</members>
+        <members>Example__c.Number__c</members>
+        <members>Example__c.Percent__c</members>
+        <members>Example__c.Phone__c</members>
+        <members>Example__c.Picklist__c</members>
+        <members>Example__c.Text_Area_Long__c</members>
+        <members>Example__c.Text_Area_Rich__c</members>
+        <members>Example__c.Text_Area__c</members>
+        <members>Example__c.Text__c</members>
+        <members>Example__c.Time__c</members>
+        <members>Example__c.True_or_false__c</members>
+        <members>Example__c.URL__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>Advertisement__c</members>
+        <members>Example__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Advertisement__c-Advertisement Layout</members>
+        <members>Example__c-Example Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>Advertisement__c.All</members>
+        <members>Example__c.All</members>
+        <name>ListView</name>
+    </types>
+    <version>47.0</version>
+</Package>

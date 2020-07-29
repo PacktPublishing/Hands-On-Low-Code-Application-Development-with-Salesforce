@@ -1,0 +1,4 @@
+Advertisement "{!Advertisement__c.Name}" has been rejected with the following comments:
+{!ApprovalRequest.Comments}
+
+Click here: {!ApprovalRequest.Internal_URL}

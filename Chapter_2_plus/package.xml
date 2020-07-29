@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Chapter 2 - Advertisement</fullName>
+    <types>
+        <members>Advertisement__c.Customer__c</members>
+        <members>Advertisement__c.Deal__c</members>
+        <members>Advertisement__c.Expected_Dismission_Date__c</members>
+        <members>Advertisement__c.Installation_Address__c</members>
+        <members>Advertisement__c.Installation_Date__c</members>
+        <members>Advertisement__c.Is_Active__c</members>
+        <members>Advertisement__c.Monhts_of_availability__c</members>
+        <members>Advertisement__c.Price__c</members>
+        <members>Advertisement__c.Renewal_Status__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>Advertisement__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Advertisement__c-Advertisement Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>Advertisement__c.All</members>
+        <name>ListView</name>
+    </types>
+    <version>47.0</version>
+</Package>

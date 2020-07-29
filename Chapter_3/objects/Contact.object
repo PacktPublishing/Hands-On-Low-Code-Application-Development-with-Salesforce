@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Domain__c</fullName>
+        <externalId>false</externalId>
+        <formula>/* Gets contact’s email address and outputs a domain url based on email’s domain*/
+&quot;www.&quot; + RIGHT(Email, LEN(Email) - FIND(&quot;@&quot;, Email) )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Domain</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Padding__c</fullName>
+        <externalId>false</externalId>
+        <formula>LPAD(Email, 60, &apos;&gt;&apos;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Padding</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Social__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(
+  &quot;https://twitter.com/&quot; &amp; Twitter_Handle__c,
+  IMAGE(
+&quot;https://upload.wikimedia.org/wikipedia/it/0/09/Twitter_bird_logo.png&quot;,
+  Twitter_Handle__c, 
+  50, 
+  50)
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Social</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Twitter_Handle__c</fullName>
+        <externalId>false</externalId>
+        <label>Twitter Handle</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+</CustomObject>

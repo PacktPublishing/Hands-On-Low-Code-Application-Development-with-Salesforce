@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Chapter 11</fullName>
+    <types>
+        <members>Advertisement__c.Customer__c</members>
+        <members>Advertisement__c.Deal__c</members>
+        <members>Advertisement__c.Discount_Approved__c</members>
+        <members>Advertisement__c.Discount__c</members>
+        <members>Advertisement__c.Expected_Dismission_Date__c</members>
+        <members>Advertisement__c.Installation_Address__c</members>
+        <members>Advertisement__c.Installation_Country__c</members>
+        <members>Advertisement__c.Installation_Date__c</members>
+        <members>Advertisement__c.Is_Active__c</members>
+        <members>Advertisement__c.Months_of_availability__c</members>
+        <members>Advertisement__c.Price__c</members>
+        <members>Advertisement__c.Renewal_Status__c</members>
+        <members>Advertisement__c.SLA__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>Advertisement__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Customer_Support_Flow</members>
+        <name>Flow</name>
+    </types>
+    <types>
+        <members>Account-Account Layout</members>
+        <members>Advertisement__c-Advertisement Layout</members>
+        <members>Contact-Contact Layout</members>
+        <members>Global-Global Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>Advertisement__c.All</members>
+        <name>ListView</name>
+    </types>
+    <types>
+        <members>Account.New_Advertisement_From_Account</members>
+        <members>Account.Start_Support</members>
+        <members>Advertisement__c.Update_SLA</members>
+        <members>Contact.Log_a_meeting</members>
+        <members>Contact.Send_discount_proposition</members>
+        <members>Contact.Update_contacting_fields</members>
+        <members>LogACall</members>
+        <members>NewCase</members>
+        <members>NewContact</members>
+        <members>NewEvent</members>
+        <members>NewLead</members>
+        <members>NewOpportunity</members>
+        <members>NewTask</members>
+        <members>New_Advertisement</members>
+        <members>SendEmail</members>
+        <name>QuickAction</name>
+    </types>
+    <types>
+        <members>Advertisement__c.Check_Approval_Status_on_Activation</members>
+        <name>ValidationRule</name>
+    </types>
+    <types>
+        <members>Account.Billing</members>
+        <name>WebLink</name>
+    </types>
+    <version>48.0</version>
+</Package>

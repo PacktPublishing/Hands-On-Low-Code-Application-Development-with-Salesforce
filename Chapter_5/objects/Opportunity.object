@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Discount__c</fullName>
+        <defaultValue>Case(MONTH( TODAY() ),
+  1,  $CustomMetadata.Monthly_Discount__mdt.JAN.Discount__c,
+  2,  $CustomMetadata.Monthly_Discount__mdt.FEB.Discount__c,
+  3,  $CustomMetadata.Monthly_Discount__mdt.MAR.Discount__c,
+  4,  $CustomMetadata.Monthly_Discount__mdt.APR.Discount__c,
+  5,  $CustomMetadata.Monthly_Discount__mdt.MAY.Discount__c,
+  6,  $CustomMetadata.Monthly_Discount__mdt.JUN.Discount__c,
+  7,  $CustomMetadata.Monthly_Discount__mdt.JUL.Discount__c,
+  8,  $CustomMetadata.Monthly_Discount__mdt.AUG.Discount__c,
+  9,  $CustomMetadata.Monthly_Discount__mdt.SEP.Discount__c,
+  10, $CustomMetadata.Monthly_Discount__mdt.OCT.Discount__c,
+  11, $CustomMetadata.Monthly_Discount__mdt.NOV.Discount__c,
+  12, $CustomMetadata.Monthly_Discount__mdt.DEC.Discount__c,
+0)</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Discounted</inlineHelpText>
+        <label>Discount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <validationRules>
+        <fullName>Restrict_create_update_on_Opportunities</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+  OR(
+    $User.Department != $Setup.Sales_Settings__c.Sales_Department_Name__c,
+    $User.Division != $Setup.Sales_Settings__c.Big_Customers_Division__c
+  ),
+  Amount &gt; $Setup.Sales_Settings__c.Amount_Threshold__c
+)</errorConditionFormula>
+        <errorMessage>You cannot create/update opportunities with this amount</errorMessage>
+    </validationRules>
+</CustomObject>

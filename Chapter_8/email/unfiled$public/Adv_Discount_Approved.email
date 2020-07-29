@@ -1,0 +1,4 @@
+Advertisement "{!Advertisement__c.Name}" has been approved.
+
+
+Click here: {!ApprovalRequest.Internal_URL}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Chapter 5</fullName>
+    <types>
+        <members>Monthly_Discount__mdt.Discount__c</members>
+        <members>Opportunity.Discount__c</members>
+        <members>Sales_Settings__c.Amount_Threshold__c</members>
+        <members>Sales_Settings__c.Big_Customers_Division__c</members>
+        <members>Sales_Settings__c.Sales_Department_Name__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>Monthly_Discount.APR</members>
+        <members>Monthly_Discount.AUG</members>
+        <members>Monthly_Discount.DEC</members>
+        <members>Monthly_Discount.FEB</members>
+        <members>Monthly_Discount.JAN</members>
+        <members>Monthly_Discount.JUL</members>
+        <members>Monthly_Discount.JUN</members>
+        <members>Monthly_Discount.MAR</members>
+        <members>Monthly_Discount.MAY</members>
+        <members>Monthly_Discount.NOV</members>
+        <members>Monthly_Discount.OCT</members>
+        <members>Monthly_Discount.SEP</members>
+        <name>CustomMetadata</name>
+    </types>
+    <types>
+        <members>Monthly_Discount__mdt</members>
+        <members>Sales_Settings__c</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Monthly_Discount__mdt-Monthly Discount Layout</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>Opportunity.Restrict_create_update_on_Opportunities</members>
+        <name>ValidationRule</name>
+    </types>
+    <version>47.0</version>
+</Package>

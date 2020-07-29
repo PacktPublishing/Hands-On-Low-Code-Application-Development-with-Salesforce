@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Search__c</fullName>
+        <externalId>false</externalId>
+        <formula>/*created a link that searches for Account’s name on google*/
+HYPERLINK(
+  &quot;https://www.google.com/search?q=&quot; &amp; Name,
+  &quot;Search on Google...&quot;,
+  &quot;_blank&quot;
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Search</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+</CustomObject>

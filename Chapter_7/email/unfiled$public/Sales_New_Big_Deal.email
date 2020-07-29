@@ -1,0 +1,5 @@
+A new big deal has been closed won for opportunity "{!Opportunity.Name}" and customer "{!Account.Name}":
+- Amount: {!Opportunity.Amount}
+- Rating:  {!Account.Rating}
+
+Cheers!
