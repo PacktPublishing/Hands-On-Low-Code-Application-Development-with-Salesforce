@@ -296,7 +296,6 @@
             </valueSetDefinition>
         </valueSet>
     </fields>
-    <gender>Masculine</gender>
     <label>Advertisement</label>
     <listViews>
         <fullName>All</fullName>

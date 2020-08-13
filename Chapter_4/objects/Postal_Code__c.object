@@ -162,7 +162,6 @@
         <type>Text</type>
         <unique>false</unique>
     </fields>
-    <gender>Masculine</gender>
     <label>Postal Code</label>
     <listViews>
         <fullName>All</fullName>

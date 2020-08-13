@@ -387,7 +387,6 @@
         <trackTrending>false</trackTrending>
         <type>Url</type>
     </fields>
-    <gender>Feminine</gender>
     <label>Example</label>
     <listViews>
         <fullName>All</fullName>

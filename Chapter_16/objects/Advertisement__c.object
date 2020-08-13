@@ -128,31 +128,47 @@
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Advertisement_Custom_Page</content>
         <formFactor>Large</formFactor>
-        <type>Default</type>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
     </actionOverrides>
     <actionOverrides>
         <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Advertisement_Custom_Page</content>
         <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
         <type>Default</type>
     </actionOverrides>
     <allowInChatterGroups>false</allowInChatterGroups>
-    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <compactLayoutAssignment>Adv_Compact_Layout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>Adv_Compact_Layout</fullName>
+        <fields>Name</fields>
+        <fields>Customer__c</fields>
+        <fields>SLA__c</fields>
+        <fields>Installation_Country__c</fields>
+        <fields>Is_Active__c</fields>
+        <label>Adv. Compact Layout</label>
+    </compactLayouts>
     <deploymentStatus>Deployed</deploymentStatus>
     <description>Contains the details of a sold advertisement</description>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
-    <enableFeeds>false</enableFeeds>
+    <enableFeeds>true</enableFeeds>
     <enableHistory>true</enableHistory>
     <enableLicensing>false</enableLicensing>
     <enableReports>true</enableReports>
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
     <fields>
         <fullName>Customer__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
@@ -163,6 +179,7 @@
         <relationshipLabel>Advertisements</relationshipLabel>
         <relationshipName>Advertisements</relationshipName>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
@@ -177,6 +194,7 @@
         <relationshipLabel>Advertisements</relationshipLabel>
         <relationshipName>Advertisements</relationshipName>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
@@ -186,6 +204,7 @@
         <externalId>false</externalId>
         <label>Discount Status</label>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
@@ -219,6 +238,7 @@
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackFeedHistory>true</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Percent</type>
@@ -230,9 +250,9 @@
         <formula>ADDMONTHS(
   Installation_Date__c ,
   IF(
-    ISBLANK(Monhts_of_availability__c),
+    ISBLANK(Months_of_availability__c),
     0,  
-    Monhts_of_availability__c)
+    Months_of_availability__c)
 )</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Expected Dismission Date</label>
@@ -247,16 +267,30 @@
         <externalId>false</externalId>
         <label>Installation Address</label>
         <length>2000</length>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>5</visibleLines>
     </fields>
     <fields>
+        <fullName>Installation_City__c</fullName>
+        <externalId>false</externalId>
+        <label>Installation City</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Installation_Country__c</fullName>
         <externalId>false</externalId>
         <label>Installation Country</label>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
@@ -323,6 +357,7 @@
         <externalId>false</externalId>
         <label>Installation Date</label>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Date</type>
@@ -333,18 +368,20 @@
         <description>ad is still in place or not</description>
         <externalId>false</externalId>
         <label>Is Active</label>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
     </fields>
     <fields>
-        <fullName>Monhts_of_availability__c</fullName>
+        <fullName>Months_of_availability__c</fullName>
         <description>number of months the ad will be active</description>
         <externalId>false</externalId>
-        <label>Monhts of availability</label>
+        <label>Months of availability</label>
         <precision>3</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Number</type>
@@ -358,6 +395,7 @@
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
+        <trackFeedHistory>true</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Currency</type>
@@ -368,6 +406,7 @@
         <externalId>false</externalId>
         <label>Renewal Status</label>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
@@ -408,6 +447,7 @@
         <externalId>false</externalId>
         <label>SLA</label>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
@@ -435,22 +475,79 @@
     </fields>
     <label>Advertisement</label>
     <listViews>
+        <fullName>Active_Ads</fullName>
+        <columns>NAME</columns>
+        <columns>Is_Active__c</columns>
+        <columns>Installation_Country__c</columns>
+        <columns>Installation_City__c</columns>
+        <columns>Price__c</columns>
+        <columns>Installation_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Is_Active__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Active Ads</label>
+    </listViews>
+    <listViews>
         <fullName>All</fullName>
         <columns>NAME</columns>
         <columns>Customer__c</columns>
         <columns>SLA__c</columns>
         <columns>Is_Active__c</columns>
+        <columns>Installation_Country__c</columns>
+        <columns>Price__c</columns>
         <filterScope>Everything</filterScope>
         <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>Italian_Ads</fullName>
+        <booleanFilter>1 AND 2</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Customer__c</columns>
+        <columns>Deal__c</columns>
+        <columns>Installation_Address__c</columns>
+        <columns>Is_Active__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Installation_Country__c</field>
+            <operation>equals</operation>
+            <value>Italy</value>
+        </filters>
+        <filters>
+            <field>Is_Active__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Italian Ads.</label>
     </listViews>
     <nameField>
         <displayFormat>A-{YYYY}-{00000000}</displayFormat>
         <label>Advertisement Code</label>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>AutoNumber</type>
     </nameField>
     <pluralLabel>Advertisements</pluralLabel>
-    <searchLayouts/>
+    <profileSearchLayouts>
+        <fields>NAME</fields>
+        <fields>Customer__c</fields>
+        <fields>Deal__c</fields>
+        <profileName>System Administrator</profileName>
+    </profileSearchLayouts>
+    <searchLayouts>
+        <lookupDialogsAdditionalFields>Customer__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>SLA__c</lookupDialogsAdditionalFields>
+        <massQuickActions>Update_SLA</massQuickActions>
+        <searchResultsAdditionalFields>Months_of_availability__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Customer__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>SLA__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Installation_Address__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Installation_Country__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Is_Active__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Installation_Date__c</searchResultsAdditionalFields>
+    </searchLayouts>
     <sharingModel>Private</sharingModel>
     <startsWith>Vowel</startsWith>
     <validationRules>
