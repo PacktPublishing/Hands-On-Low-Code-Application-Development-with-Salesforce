@@ -61,3 +61,7 @@ is a 20 times Salesforce certified solution and technical architect at WebResult
 ## Other books by the authors
 [Salesforce Advanced Administrator Certification Guide](https://www.packtpub.com/virtualization-and-cloud/salesforce-advanced-administrator-certification-guide?utm_source=github&utm_medium=repository&utm_campaign=9781838643898)
 
+### Download a free PDF
+
+ <i>If you have already purchased a print or Kindle version of this book, you can get a DRM-free PDF version at no cost.<br>Simply click on the link to claim your free PDF.</i>
+<p align="center"> <a href="https://packt.link/free-ebook/9781800209770">https://packt.link/free-ebook/9781800209770 </a> </p>
